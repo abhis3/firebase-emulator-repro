@@ -30,10 +30,20 @@ function getProdStorage() {
 }
 
 function App() {
+
+  const fix3823 = () => {
+    const storage = getEmulatedStorage()
+    //const listRef = ref(storage, 'users/1111');
+    //const r = ref(storage, "/users/1111/media/2222");
+    //uploadString(r, "fooooo").then(response=>console.log(response)).catch(e =>console.log(e));
+  }
+
   const upload4778 = () => {
     const storage = getEmulatedStorage()
     const r = ref(storage, "/users/1111/media/2222");
+    const s = ref(storage, "/users/1111/media/3333");
     uploadString(r, "fooooo").then(response=>console.log(response)).catch(e =>console.log(e));
+    uploadString(s, "barrrrr");
   }
   const list3533 = async () => {
     const storage = getEmulatedStorage()
@@ -80,6 +90,10 @@ function App() {
         <button onClick={upload3772}>
           3772
         </button>
+        {<button onClick={fix3823}>
+          3823
+        </button>
+        }
       </header>
     </div>
   );

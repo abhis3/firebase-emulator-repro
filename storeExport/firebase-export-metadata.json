@@ -1,0 +1,11 @@
+{
+  "version": "11.4.0",
+  "auth": {
+    "version": "11.4.0",
+    "path": "auth_export"
+  },
+  "storage": {
+    "version": "11.4.0",
+    "path": "storage_export"
+  }
+}

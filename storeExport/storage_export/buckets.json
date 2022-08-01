@@ -1,0 +1,10 @@
+{
+  "buckets": [
+    {
+      "id": "foo.appspot.com"
+    },
+    {
+      "id": "test-a71aa.appspot.com"
+    }
+  ]
+}
